@@ -42,15 +42,15 @@ class UserCard extends Component {
     render() {
         console.log(`
                     \n <div class="card card-user">
-                    \n\t <img class="card-img-top" src="user imageUrl here" alt>
+                    \n\t <img class="card-img-top" src="${this.imageURL}" alt>
                     \n\t <div class="card-body">
-                    \n\t\t <h5 class="card-title">user name here</h5>
+                    \n\t\t <h5 class="card-title">${this.name}</h5>
                     \n\t\t <p class="card-text">To contact, please send a message to</p>
                     \n\t\t <a
-                    \n\t\t\t href="mailto:user email here"
+                    \n\t\t\t href="mailto:${this.email}"
                     \n\t\t\t class="btn btn-primary"
                     \n\t\t >
-                    \n\t\t\t user email here
+                    \n\t\t\t ${this.email}
                     \n\t\t </a>
                     \n\t </div>
                     \n </div>`)
